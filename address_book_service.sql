@@ -31,6 +31,11 @@ insert into AddressBook (firstName, lastName, address, city, state, zip, phoneNu
     values ('Madhu','Sudhan S','Majestic','Chikkamangalur','Karnataka',514131,1777777777,'mss00000000@gmail.com' );
     select firstName,city from AddressBook order by city;
     select firstName,city from AddressBook order by firstName;
-    
+    alter table AddressBook add bookName varchar(25) not null, add contactType varchar(25) not null;
+    update AddressBook set bookName = 'One', contactType = 'Family' where lastName = 'Kumar';
+    update AddressBook set bookName = 'One', contactType = 'Family' where lastName = 'Kumar k';
+	update AddressBook set bookName = 'Two', contactType = 'Friends' where lastName = 'Priyadarshi';
+	update AddressBook set bookName = 'Two', contactType = 'Friends' where lastName = 'Mutallib';
+	update AddressBook set bookName = 'Three', contactType = 'Profession' where lastName = 'Sudhan S';
     
     
